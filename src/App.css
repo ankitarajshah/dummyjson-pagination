@@ -1,0 +1,82 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnail {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 6px 0;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+/* Basic pagination button styles */
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 4px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Active page button styling */
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #007bff;
+}
+
+.pagination button:disabled {
+  background-color: #dcdcdc;
+  color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+.pagination button:disabled:hover {
+  background-color: #dcdcdc;
+}
